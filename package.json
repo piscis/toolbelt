@@ -1,0 +1,25 @@
+{
+  "name": "toolbelt",
+  "description": "",
+  "version": "0.0.1rc1",
+  "author": "Alexander Pirsig <apirsig@web.de>",
+  "contributors": [
+  ],
+  "dependencies": {
+    "connect": "2.4.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+  ],
+  "publishConfig": { "tag": "1.0" },
+  "repository": "git://github.com/",
+  "main": "index",
+  "scripts": {
+    "prepublish" : "npm prune",
+    "test": "make test"
+  },
+  "engines": { "node": "*" }
+}

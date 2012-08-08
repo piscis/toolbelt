@@ -3,7 +3,6 @@
   "description": "Utilities for the daily work with NodeJS.",
   "version": "0.0.1rc1",
   "author": "Alexander Pirsig <apirsig@web.de>",
-  "contributors": [],
   "devDependencies": {
     "mocha": "*",
     "should": "*"
@@ -11,7 +10,7 @@
   "keywords": [
     "utils",
     "utility",
-    "utilities"
+    "utilities",
     "toolbelt",
     "toolbox",
     "helpers",
@@ -38,10 +37,8 @@
     "url": "https://github.com/piscis/toolbelt/issues",
     "email": "apirsig@web.de"
   },
-  "licenses": [ 
-    {
-      "type": "MIT",
-      "url": "https://github.com/piscis/toolbelt/LICENSE"
-    }
-  ]
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/piscis/toolbelt/LICENSE"
+  }]
 }

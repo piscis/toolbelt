@@ -8,7 +8,6 @@ describe('format/money',function(){
     describe('money',function(){
 
         it('should be loadable',function(){
-
              money = toolbelt.pick('format/money');
              money.should.be.a('function');
         });

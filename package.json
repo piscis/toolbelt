@@ -1,25 +1,47 @@
 {
   "name": "toolbelt",
-  "description": "",
+  "description": "Utilities for the daily work with NodeJS.",
   "version": "0.0.1rc1",
   "author": "Alexander Pirsig <apirsig@web.de>",
-  "contributors": [
-  ],
-  "dependencies": {
-    "connect": "2.4.2"
-  },
+  "contributors": [],
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
   "keywords": [
+    "utils",
+    "utility",
+    "utilities"
+    "toolbelt",
+    "toolbox",
+    "helpers",
+    "traverse",
+    "format",
+    "sort",
+    "fs",
+    "mixin",
+    "extend",
+    "wordwrap",
+    "uuid",
+    "random",
+    "uid"
   ],
   "publishConfig": { "tag": "1.0" },
-  "repository": "git://github.com/",
+  "repository": "git://github.com/piscis/toolbelt.git",
   "main": "index",
+  "engines": { "node": "*" },
   "scripts": {
-    "prepublish" : "npm prune",
-    "test": "make test"
+    "test": "mocha tests"
   },
-  "engines": { "node": "*" }
+  "homepage": "https://github.com/piscis/toolbelt",
+  "bugs": {
+    "url": "https://github.com/piscis/toolbelt/issues",
+    "email": "apirsig@web.de"
+  },
+  "licenses": [ 
+    {
+      "type": "MIT",
+      "url": "https://github.com/piscis/toolbelt/LICENSE"
+    }
+  ]
 }

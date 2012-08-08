@@ -1,6 +1,8 @@
 ### ToolBelt
 One library with helpers to make the work with NodeJS more easy. Contributes are welcome!
 
+[![Build Status](https://secure.travis-ci.org/piscis/toolbelt.png)](http://travis-ci.org/piscis/toolbelt)
+
 ####(The MIT License)
 
 #####Copyright (c) 2010-2012 Alexander Pirsig <apirsig@web.de>

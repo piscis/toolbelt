@@ -2,19 +2,19 @@ var should = require("should");
 
 describe('Toolbelt', function(){
 
-    var toolbox;
+    var toolbelt;
 
     describe('instance',function(){
 
         it('should be requireable',function(){
-            toolbox = require(__dirname+'/../index');
+            toolbelt = require(__dirname+'/../index');
         });
     });
 
     describe('getModule', function(){
 
         it('should load base components', function(){
-            var extend = toolbox.getModule('base/extend');
+            var extend = toolbelt.pick('base/extend');
             extend.should.be.a('function');
         });
     })

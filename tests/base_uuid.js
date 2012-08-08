@@ -1,5 +1,5 @@
 var should = require('should');
-var toolbox = require(__dirname+'/../index');
+var toolbelt = require(__dirname+'/../index');
 
 describe('base/uuid',function(){
 
@@ -9,7 +9,7 @@ describe('base/uuid',function(){
 
         it('should be loadable',function(){
 
-             uuid = toolbox.getModule('base/uuid');
+             uuid = toolbelt.pick('base/uuid');
              uuid.should.be.a('function');
         });
 

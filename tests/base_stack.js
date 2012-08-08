@@ -1,5 +1,5 @@
 var should = require('should');
-var toolbox = require(__dirname+'/../index');
+var toolbelt = require(__dirname+'/../index');
 
 describe('base/stack',function(){
 
@@ -9,7 +9,7 @@ describe('base/stack',function(){
 
         it('should be loadable',function(){
 
-             stack = toolbox.getModule('base/stack');
+             stack = toolbelt.pick('base/stack');
              stack.should.be.a('function');
         });
 

@@ -1,5 +1,5 @@
 var should = require('should');
-var toolbox = require(__dirname+'/../index');
+var toolbelt = require(__dirname+'/../index');
 
 describe('format/date', function(){
 
@@ -10,7 +10,7 @@ describe('format/date', function(){
 
     it('should be loadable',function(){
 
-         dateFormat = toolbox.getModule('format/date');
+         dateFormat = toolbelt.pick('format/date');
          dateFormat.should.be.a('function');
     });
 

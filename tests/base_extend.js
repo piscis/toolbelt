@@ -1,5 +1,5 @@
 var should = require('should');
-var toolbox = require(__dirname+'/../index');
+var toolbelt = require(__dirname+'/../index');
 
 describe('base/extend', function(){
 
@@ -7,7 +7,7 @@ describe('base/extend', function(){
 
     it('should be loadable',function(){
 
-         extend = toolbox.getModule('base/extend');
+         extend = toolbelt.pick('base/extend');
          extend.should.be.a('function');
     });
 

@@ -87,7 +87,8 @@ Modifies a stack of data and returns the result.
 
 Takes a stack of numbers and increments them by 1
 
-    var stack = [1,2,3,4,5];
+    var stack = require('toolbelt').pick('base/stack');
+    var list = [1,2,3,4,5];
     var worker = function(data,cb){
 
         // LONNNGGG Calculation :-)
@@ -103,8 +104,7 @@ Takes a stack of numbers and increments them by 1
         console.log(data);
     }
 
-    stack(stack, worker, callback); // returns [2,3,4,5,6];
-
+    stack(list, worker, callback); // returns [2,3,4,5,6];
 
 --------------------------------------------------------------
 
@@ -116,6 +116,7 @@ Generates a UUID
 
 #### Examples:
 
+    var uuid = require('toolbelt').pick('base/uuid');
     var myId = uuid(); // returns [random uuid]
 
 --------------------------------------------------------------
@@ -131,6 +132,7 @@ Format a local date/time. Its basicaly a port from PHPs date() function. For mor
 
 #### Examples:
 
+    var date = require('toolbelt').pick('format/date');
     var testTime = new Date();
     var dateFormarted = date('Y-m-d H:i:s',testTime); // returns "2012-08-07 17:39:27"
 
@@ -149,6 +151,7 @@ Formats a Number/Float/Double.
 
 #### Examples:
 
+    var money = require('toolbelt').pick('format/money');
     var formatedString = money(1000.111, 2, '.',','); // returns "1,000.11"
 
 --------------------------------------------------------------
@@ -165,19 +168,112 @@ Asynchronously copies a file from a source to a destination
 
 #### Examples:
 
+    var copy = require('toolbelt').pick('fs/copy');
     copy('/tmp/a.txt','/tmp/b.txt',function(err) {
         if(err) throw Error('Copy failed!');
     });
 
 --------------------------------------------------------------
 
+### Module: fs/copySync
 
+Synchronously copies a file from a source to a destination
+
+    copy(source,destination);
+
+* **source** Path to a filesource
+* **destination** Path to the destination we´re the file gets copied.
+
+#### Examples:
+
+    var copySync = require('toolbelt').pick('fs/copySync');
+    copySync('/tmp/a.txt','/tmp/b.txt');
+
+--------------------------------------------------------------
+
+### Module: fs/dirwalkParallel
+
+Walks a directory recusive in parallel and lists all files in it.
+
+    dirwalkParallel(path,callback);
+
+* **source** Path to directory
+* **callback** Callback with error and data handler.
+
+#### Examples:
+
+    var dirwalkParallel = require('toolbelt').pick('fs/dirwalkParallel');
+    dirwalkParallel('/tmp',function(err,data){
+
+        if(err) throw new Error('Error');
+        console.log(data); // Array with all files in subdirectory
+    });
+
+--------------------------------------------------------------
+
+### Module: fs/dirwalkSeriel
+
+Walks a directory recusive in seriel (one-by-one) and lists all files in it.
+
+    dirwalkParallel(path,callback);
+
+* **source** Path to directory
+* **callback** Callback with error and data handler.
+
+#### Examples:
+
+    var dirwalkSeriel = require('toolbelt').pick('fs/dirwalkSeriel');
+    dirwalkSeriel('/tmp',function(err,data){
+
+        if(err) throw new Error('Error');
+        console.log(data); // Array with all files in subdirectory
+    });
+
+--------------------------------------------------------------
+
+### Module: sort/natsort
+
+Natural sort algorithm in Javascript. Can be used together with Array.sort as a comperator.
+
+    natsort(a,b);
+
+* **a** Input A.
+* **b** Input B.
+
+#### Examples:
+
+    var natsort = require('toolbelt').pick('sort/natsort');
+    var ipList = [
+        '10.5.1.1',
+        '10.5.1.6',
+        '10.5.2.2'
+    ];
+
+    var ipListSorted = ipList.sort(natsort);
+
+--------------------------------------------------------------
+
+### Module: txt/iwordwrap
+
+WordWrap for Hipsters.
+
+    iwordwrap(text [, length] [,fill]);
+
+* **text** Text to shortend.
+* **length** Maximal length after shortend.
+* **fill** String to use to fill the space.
+
+#### Examples:
+
+    var iwordwrap = require('toolbelt').pick('txt/iwordwrap');
+    var res = iwordwrap('CaWaBunGa-CaWaBunGa'); // returns "CaWaB...unGa";
+
+--------------------------------------------------------------
 
 ## ToDo´s
 
-* Docu
-* More Modules
 * Complete modules list method
+* More Modules
 
 ## License
 

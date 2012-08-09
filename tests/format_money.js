@@ -17,7 +17,7 @@ describe('format/money',function(){
             formatedString.should.be.a('string');
         });
 
-        it('should respect decimal length', function(){
+        it('should respect decimal length (randix)', function(){
             var formatedString = money(1000.1151, 3, ',','.');
             formatedString.should.be.equal('1.000,115');
         });

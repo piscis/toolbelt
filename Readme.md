@@ -112,13 +112,66 @@ Takes a stack of numbers and increments them by 1
 
 Generates a UUID
 
-    uuid()
+    uuid();
 
 #### Examples:
 
     var myId = uuid(); // returns [random uuid]
 
 --------------------------------------------------------------
+
+### Module: format/date
+
+Format a local date/time. Its basicaly a port from PHPs date() function. For more info on the format string see (function.date-Page)[http://php.net/manual/en/function.date.php].
+
+    date(format, [Date]);
+
+* **format** The format of the outputted date string.
+* **Date** Instance of "Date" set to a specific time otherwise current date.
+
+#### Examples:
+
+    var testTime = new Date();
+    var dateFormarted = date('Y-m-d H:i:s',testTime); // returns "2012-08-07 17:39:27"
+
+--------------------------------------------------------------
+
+### Module: format/money
+
+Formats a Number/Float/Double.
+
+    money(amount,radix,ThsSeperator,DecDelimiter);
+
+* **amount** Number or Float to be used.
+* **accuracy** The accuracy to be used for amount.
+* **ThsSeperator** Delimiter that is used for thousand seperator.
+* **DecDelimiter** Decimal delimiter that should be used.
+
+#### Examples:
+
+    var formatedString = money(1000.111, 2, '.',','); // returns "1,000.11"
+
+--------------------------------------------------------------
+
+### Module: fs/copy
+
+Asynchronously copies a file from a source to a destination
+
+    copy(source,destination,callback);
+
+* **source** Path to a filesource
+* **destination** Path to the destination we´re the file gets copied.
+* **callback** Callback to test for errors.
+
+#### Examples:
+
+    copy('/tmp/a.txt','/tmp/b.txt',function(err) {
+        if(err) throw Error('Copy failed!');
+    });
+
+--------------------------------------------------------------
+
+
 
 ## ToDo´s
 

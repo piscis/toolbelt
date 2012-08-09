@@ -5,9 +5,13 @@ Contributions are welcomed!
 
 [![Build Status](https://secure.travis-ci.org/piscis/toolbelt.png)](http://travis-ci.org/piscis/toolbelt)
 
+--------------------------------------------------------------
+
 ## Installation
 
     $ npm install toolbelt
+
+--------------------------------------------------------------
 
 ## Running Tests
 
@@ -18,6 +22,34 @@ To run the tests first invoke the following command to install all dev dependenc
 Run the tests with
  
     $ npm test
+
+--------------------------------------------------------------
+
+## List of available modules
+
+###### Base
+* [base/extend](#module-baseextend)
+* [base/has](#module-basehas)
+* [base/stack](#module-basestack)
+* [base/uuid](#module-baseuuid)
+
+###### Format
+* [format/date](#module-formatdate)
+* [format/money](#module-formatmony)
+
+##### Filesystem
+* [fs/copy](#module-fscopy)
+* [fs/copySync](#module-fscopysync)
+* [fs/dirwalkParallel](#module-fsdirwalkparallel)
+* [fs/dirwalkSeriel](#module-fsdirwalkseriel)
+
+###### Sorting
+* [sort/natsort](#module-sortnatsort)
+
+###### Textmanipulation
+*[ txt/iwordwrap](#module-txtiwordwrap)
+
+--------------------------------------------------------------
 
 ## Modules
 

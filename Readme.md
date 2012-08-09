@@ -52,6 +52,22 @@ Merge the contents of two or more objects/arrays together into the first object/
     var extend = require('toolbelt').pick('base/extend');
     var data = extend(true,{a:1},{b:2});
 
+### Module: base/has
+
+A extend version of "hasOwnProperty" tests if a object has a certain structure.
+
+    has(object, path);
+
+* **object** A object to check.
+* **path** A path of keys to test against the object.
+
+#### Examples:
+
+    var has = require('toolbelt').pick('base/has');
+    var data = {foo:{bar:{baz:1}}};
+    var hasPath = has(data,'foo.bar.baz'); // returns true
+    var hasPath = has(data,'foo.bar.nuv'); // returns false
+
 
 ## License
 

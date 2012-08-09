@@ -1,4 +1,4 @@
-![toolbelt logo](http://labs.pirsig.net/toolbelt/toolbelt_logo.png)
+![toolbelt logo](http://labs.pirsig.net/toolbelt/toolbelt_logo.jpg)
 
 A set of sexy little helper, to make the daily work with nodeJS a bit easier.
 

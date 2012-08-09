@@ -109,7 +109,23 @@ Takes a stack of numbers and increments them by 1
 
 --------------------------------------------------------------
 
+### Module: base/uuid
 
+Generates a UUID
+
+    uuid()
+
+#### Examples:
+
+    var myId = uuid(); // returns [random uuid]
+
+--------------------------------------------------------------
+
+## ToDo´s
+
+* Docu
+* More Modules
+* Complete modules list method
 
 ## License
 

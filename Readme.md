@@ -47,7 +47,7 @@ Run the tests with
 * [sort/natsort](#module-sortnatsort)
 
 ###### Textmanipulation:
-*[ txt/iwordwrap](#module-txtiwordwrap)
+* [ txt/iwordwrap](#module-txtiwordwrap)
 
 --------------------------------------------------------------
 

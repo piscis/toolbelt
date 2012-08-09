@@ -1,9 +1,60 @@
-### ToolBelt
-One library with helpers to make the work with NodeJS more easy. Contributes are welcome!
+# ToolBelt
+
+A set of helpers, that makes the daily work with node a bit easier.
+
+Contributes are welcome!
 
 [![Build Status](https://secure.travis-ci.org/piscis/toolbelt.png)](http://travis-ci.org/piscis/toolbelt)
 
-####(The MIT License)
+## Installation
+
+    $ npm install toolbelt
+
+## Running Tests
+
+To run the tests first invoke the following command to install all dev dependencies.
+
+    $ npm install
+
+Run the tests with
+ 
+    $ npm test
+
+## Modules
+
+### Basic usage
+
+Load and use a module:
+
+    var helper = require('toolbelt').pick([module_namespace]);
+    var data = helper([do_your_thing]);
+
+### Module: base/extend
+
+Merge the contents of two or more objects together into the first object.    
+
+    extend( target [, object1] [, objectN] );
+
+*** target *** An object that will receive the new properties
+*** object1 *** An object containing additional properties to merge in.
+*** object2 *** Additional objects containing properties to merge in.
+
+#### Examples:
+
+*** Shallow extend ***
+
+    var extend = require('toolbelt').pick('base/extend');
+    var data = extend({a:1},{b:2});
+
+*** Deep extend ***
+
+    var extend = require('toolbelt').pick('base/extend');
+    var data = extend(true,{a:1},{b:2});
+
+
+## License
+
+###(The MIT License)
 
 #####Copyright (c) 2010-2012 Alexander Pirsig <apirsig@web.de>
 

@@ -30,7 +30,7 @@
   "main": "index",
   "engines": { "node": "*" },
   "scripts": {
-    "test": "mocha tests"
+    "test": "make test"
   },
   "homepage": "https://github.com/piscis/toolbelt",
   "bugs": {

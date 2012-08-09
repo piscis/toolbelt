@@ -29,6 +29,8 @@ Load and use a module:
     var helper = require('toolbelt').pick([module_namespace]);
     var data = helper([do_your_thing]);
 
+--------------------------------------------------------------
+
 ### Module: base/extend
 
 Merge the contents of two or more objects/arrays together into the first object/array.    
@@ -52,6 +54,8 @@ Merge the contents of two or more objects/arrays together into the first object/
     var extend = require('toolbelt').pick('base/extend');
     var data = extend(true,{a:1},{b:2});
 
+--------------------------------------------------------------
+
 ### Module: base/has
 
 A extend version of "hasOwnProperty" tests if a object has a certain structure.
@@ -67,6 +71,44 @@ A extend version of "hasOwnProperty" tests if a object has a certain structure.
     var data = {foo:{bar:{baz:1}}};
     var hasPath = has(data,'foo.bar.baz'); // returns true
     var hasPath = has(data,'foo.bar.nuv'); // returns false
+
+--------------------------------------------------------------
+
+### Module: base/stack
+
+Modifies a stack of data and returns the result.
+
+    stack(stack, worker, callback);
+
+* **stack** A object to check.
+* **worker** A path of keys to test against the object.
+* **callback** A function that gets called when the stack has finished its work.
+
+#### Examples:
+
+Takes a stack of numbers and increments them by 1
+
+    var stack = [1,2,3,4,5];
+    var worker = function(data,cb){
+
+        // LONNNGGG Calculation :-)
+        setTimeout(function() {
+            data = data+1;
+            cb(false,data);
+        },100);
+    };
+
+    var callback = function(err, data){
+
+        if(err) throw new Error('Upps');
+        console.log(data);
+    }
+
+    stack(stack, worker, callback); // returns [2,3,4,5,6];
+
+
+--------------------------------------------------------------
+
 
 
 ## License

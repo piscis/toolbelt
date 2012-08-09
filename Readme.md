@@ -35,21 +35,23 @@ Merge the contents of two or more objects together into the first object.
 
     extend( target [, object1] [, objectN] );
 
-*** target *** An object that will receive the new properties
-*** object1 *** An object containing additional properties to merge in.
-*** object2 *** Additional objects containing properties to merge in.
+**target** An object that will receive the new properties
+**object1** An object containing additional properties to merge in.
+**object2** Additional objects containing properties to merge in.
 
 #### Examples:
 
-*** Shallow extend ***
+**Shallow extend**
 
     var extend = require('toolbelt').pick('base/extend');
     var data = extend({a:1},{b:2});
 
-*** Deep extend ***
+**Deep extend**
 
     var extend = require('toolbelt').pick('base/extend');
     var data = extend(true,{a:1},{b:2});
+
+
 
 
 ## License

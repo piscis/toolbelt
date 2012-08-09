@@ -27,26 +27,26 @@ Run the tests with
 
 ## List of available modules
 
-###### Base
+###### Base:
 * [base/extend](#module-baseextend)
 * [base/has](#module-basehas)
 * [base/stack](#module-basestack)
 * [base/uuid](#module-baseuuid)
 
-###### Format
+###### Format:
 * [format/date](#module-formatdate)
 * [format/money](#module-formatmony)
 
-##### Filesystem
+###### Filesystem:
 * [fs/copy](#module-fscopy)
 * [fs/copySync](#module-fscopysync)
 * [fs/dirwalkParallel](#module-fsdirwalkparallel)
 * [fs/dirwalkSeriel](#module-fsdirwalkseriel)
 
-###### Sorting
+###### Sorting:
 * [sort/natsort](#module-sortnatsort)
 
-###### Textmanipulation
+###### Textmanipulation:
 *[ txt/iwordwrap](#module-txtiwordwrap)
 
 --------------------------------------------------------------
@@ -57,8 +57,8 @@ Run the tests with
 
 Load and use a module:
 
-    var helper = require('toolbelt').pick([module_namespace]);
-    var data = helper([do_your_thing]);
+    var module = require('toolbelt').pick([module_namespace]);
+    var data = module([do_your_thing]);
 
 --------------------------------------------------------------
 

@@ -123,7 +123,7 @@ Generates a UUID
 
 ### Module: format/date
 
-Format a local date/time. Its basicaly a port from PHPs date() function. For more info on the format string see (function.date-Page)[http://php.net/manual/en/function.date.php].
+Format a local date/time. Its basicaly a port from PHPs date() function. For more info on the format string see [function.date-Page](http://php.net/manual/en/function.date.php).
 
     date(format, [Date]);
 

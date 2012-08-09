@@ -80,9 +80,9 @@ Modifies a stack of data and returns the result.
 
     stack(stack, worker, callback);
 
-* **stack** A object to check.
-* **worker** A path of keys to test against the object.
-* **callback** A function that gets called when the stack has finished its work.
+* **stack** Array with data to work on.
+* **worker** A reducer function.
+* **callback** A callback that is called when finished.
 
 #### Examples:
 

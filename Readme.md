@@ -1,8 +1,7 @@
 # ToolBelt
 
 A set of helpers, that makes the daily work with node a bit easier.
-
-Contributes are welcome!
+Contributions are welcomed!
 
 [![Build Status](https://secure.travis-ci.org/piscis/toolbelt.png)](http://travis-ci.org/piscis/toolbelt)
 

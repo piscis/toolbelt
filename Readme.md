@@ -31,11 +31,12 @@ Load and use a module:
 
 ### Module: base/extend
 
-Merge the contents of two or more objects together into the first object.    
+Merge the contents of two or more objects/arrays together into the first object/array.    
 
-    extend( target [, object1] [, objectN] );
+    extend([deepCopy,] target [, object1] [, objectN] );
 
-* **target** An object that will receive the new properties
+* **deepCopy** A Boolean that if true enables deepcopy.
+* **target** An object that will receive the new properties.
 * **object1** An object containing additional properties to merge in.
 * **object2** Additional objects containing properties to merge in.
 
@@ -50,8 +51,6 @@ Merge the contents of two or more objects together into the first object.
 
     var extend = require('toolbelt').pick('base/extend');
     var data = extend(true,{a:1},{b:2});
-
-
 
 
 ## License

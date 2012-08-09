@@ -44,6 +44,7 @@
   "main": "index",
   "engines": { "node": "*" },
   "scripts": {
+    "prepublish" : "npm prune",
     "test": "make test"
   },
   "homepage": "https://github.com/piscis/toolbelt",

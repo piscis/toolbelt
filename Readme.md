@@ -297,7 +297,7 @@ WordWrap for Hipsters.
 * **str** The string to be wrapped
 * **width** The column width (a number, default: 75)
 * **brk** The character(s) to be inserted at every break (default: '\n')
-* **cut** A Boolean value (false by default). [http://us3.php.net/manual/en/function.wordwrap.php](PHP docs) for more info.
+* **cut** A Boolean value (false by default). [PHP docs](http://us3.php.net/manual/en/function.wordwrap.php) for more info.
 
 #### Examples:
 

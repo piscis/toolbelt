@@ -48,7 +48,9 @@ Run the tests with
 * [sort/natsort](#module-sortnatsort)
 
 ###### Textmanipulation:
+* [ txt/wordwrap](#module-txtwordwrap)
 * [ txt/iwordwrap](#module-txtiwordwrap)
+
 
 --------------------------------------------------------------
 
@@ -286,13 +288,37 @@ Natural sort algorithm in Javascript. Can be used together with Array.sort as a 
 
 --------------------------------------------------------------
 
-### Module: txt/iwordwrap
+### Module: txt/wordwrap
 
 WordWrap for Hipsters.
 
-    iwordwrap(text [, length] [,fill]);
+    wordwrap(str [,width] [,fill] [,brk] [,cut]);
 
-* **text** Text to shortend.
+* **str** The string to be wrapped
+* **width** The column width (a number, default: 75)
+* **brk** The character(s) to be inserted at every break (default: '\n')
+* **cut** A Boolean value (false by default). [http://us3.php.net/manual/en/function.wordwrap.php](PHP docs) for more info.
+
+#### Examples:
+
+    var wordwrap = require('toolbelt').pick('txt/wordwrap');
+    var wrapedTxt = wordwrap('Thundercats polaroid sartorial synth messenger bag wes anderson.', 20, '<br/>\n');
+
+    // returns 
+    // Thundercats polaroid <br/>\n
+    // sartorial synth <br/>\n
+    // messenger bag wes <br/>\n
+    // anderson.
+
+--------------------------------------------------------------
+
+### Module: txt/iwordwrap
+
+WordWrap for Hipsters. A iOS like wordwarp that shorts a Text in the middle deppending on its length.
+
+    iwordwrap(str [, length] [,fill]);
+
+* **str** Text to shortend.
 * **length** Maximal length after shortend.
 * **fill** String to use to fill the space.
 

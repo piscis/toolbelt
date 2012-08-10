@@ -19,4 +19,8 @@ describe('base/has', function(){
     it('should return true on a valid path',function(){
         has(fixture,"foo.bar.baz").should.be.ok;
     });
+
+    it('should return false if object is null',function(){
+        has(null,"foo.bar.baz").should.be.not.ok;
+    });
 });

@@ -45,6 +45,7 @@ Run the tests with
 * [fs/dirwalkSeriel](#module-fsdirwalkseriel)
 
 ###### Sorting:
+* [sort/queue](#module-sortqueue)
 * [sort/natsort](#module-sortnatsort)
 
 ###### Textmanipulation:
@@ -263,6 +264,44 @@ Walks a directory recusive in seriel (one-by-one) and lists all files in it.
         if(err) throw new Error('Error');
         console.log(data); // Array with all files in subdirectory
     });
+
+--------------------------------------------------------------
+
+### Module: sort/queue
+
+Sort a list/queue of objects by an identifier/key.
+
+    sortqueue(queue,key,sort);
+    
+
+* **queue** List of objects.
+* **key** Common identifier to use for sorting
+* **sort** Array.sort compatible sorting algorithm @see [Array.sort](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/sort) for details 
+
+#### Examples:
+
+    var list = [
+        {id:2},
+        {id:4},
+        {id:1},
+        {id:3}
+    ];
+
+    var numericSort = function(a,b){
+        return a-b;
+    }
+
+    var sortqueue = require('toolbelt').pick('sort/queue');    
+
+    var sortedList = sortqueue(list,'id',numericSort);
+
+    // sortedList is now:
+    //[
+    //    {id:1},
+    //    {id:2},
+    //    {id:3},
+    //    {id:4}
+    //]    
 
 --------------------------------------------------------------
 

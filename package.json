@@ -1,7 +1,7 @@
 {
   "name": "toolbelt",
   "description": "A set of sexy little helper, to make the daily work with nodeJS a bit easier.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Alexander Pirsig <apirsig@web.de>",
   "devDependencies": {
     "mocha": "*",
@@ -39,7 +39,7 @@
     "stack",
     "worker"
   ],
-  "publishConfig": { "tag": "0.1.3" },
+  "publishConfig": { "tag": "0.1.4" },
   "repository": "git://github.com/piscis/toolbelt.git",
   "main": "index",
   "engines": { "node": "*" },

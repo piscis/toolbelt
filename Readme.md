@@ -46,6 +46,8 @@ Run the tests with
 
 ###### Radom:
 * [rand/item](#module-randitem)
+* [rand/between](#module-randbetween)
+* [rand/max](#module-randmax)
 
 ###### Sorting:
 * [sort/queue](#module-sortqueue)
@@ -210,6 +212,41 @@ Returns a random position from a number, hash, string or array
     var entry = ritem('ABC'); // returns random position from string
     var entry = ritem({a:1,b:2}); // returns a random key from a hash
     var entry = ritem(123); // returns a random pos from the number [1|2|3]
+
+--------------------------------------------------------------
+
+### Module: rand/max
+
+Returns a random number limited by a specified upper threshold.
+
+    rmax(maxVal,[floatVal]);
+
+* **maxVal** The upper threshold for the random number.
+* **floatVal** floating point decimal.
+
+#### Examples:
+
+    var rmax = require('toolbelt').pick('rand/max');
+    var entry = rmax(4); // returns random integer <= 4
+    var entry = rmax(4,1); // returns random integer <= 4.0
+
+--------------------------------------------------------------
+
+### Module: rand/between
+
+Returns a random number limited by a upper and lower threshold.
+
+    rbetween(minVal, maxVal,[floatVal]);
+
+* **minVal** The lower threshold for the random number.
+* **maxVal** The upper threshold for the random number.
+* **floatVal** floating point decimal.
+
+#### Examples:
+
+    var rbetween = require('toolbelt').pick('rand/between');
+    var entry = rmax(1,4); // returns random integer <= 4
+    var entry = rmax(1,4,1); // returns random integer <= 4.0
 
 --------------------------------------------------------------
 

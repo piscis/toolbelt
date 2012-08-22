@@ -1,10 +1,8 @@
 ![toolbelt logo](http://labs.pirsig.net/toolbelt/toolbelt_logo.jpg)
 
-A set of sexy little helper, to make the daily work with nodeJS a bit easier.
+A set of sexy little helper, to make the daily work with nodeJS a bit easier :-)
 
 [![Build Status](https://secure.travis-ci.org/piscis/toolbelt.png)](http://travis-ci.org/piscis/toolbelt)
-
-Contributions are welcomed!
 
 --------------------------------------------------------------
 

@@ -44,6 +44,9 @@ Run the tests with
 * [fs/dirwalkParallel](#module-fsdirwalkparallel)
 * [fs/dirwalkSeriel](#module-fsdirwalkseriel)
 
+###### Radom:
+* [rand/item](#module-randitem)
+
 ###### Sorting:
 * [sort/queue](#module-sortqueue)
 * [sort/natsort](#module-sortnatsort)
@@ -189,6 +192,24 @@ Formats a Number/Float/Double.
 
     var money = require('toolbelt').pick('format/money');
     var formatedString = money(1000.111, 2, '.',','); // returns "1,000.11"
+
+--------------------------------------------------------------
+
+### Module: rand/item
+
+Returns a random position from a number, hash, string or array
+
+    item(list);
+
+* **list** A number, hash, string or array.
+
+#### Examples:
+
+    var ritem = require('toolbelt').pick('rand/item');
+    var entry = ritem([0,1,2,3,4]); // returns random integer from array
+    var entry = ritem('ABC'); // returns random position from string
+    var entry = ritem({a:1,b:2}); // returns a random key from a hash
+    var entry = ritem(123); // returns a random pos from the number [1|2|3]
 
 --------------------------------------------------------------
 

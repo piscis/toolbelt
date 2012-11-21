@@ -433,7 +433,7 @@ WordWrap for Hipsters. A iOS like wordwarp that shorts a Text in the middle depp
 
 ###(The MIT License)
 
-#####Copyright (c) 2010-2012 Alexander Pirsig <apirsig@web.de>
+#####Copyright (c) 2010-2012 Alexander Pirsig <self@pirsig.net>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

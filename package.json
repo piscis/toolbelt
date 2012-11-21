@@ -2,7 +2,7 @@
   "name": "toolbelt",
   "description": "A set of sexy little helper, to make the daily work with nodeJS a bit easier.",
   "version": "0.1.5",
-  "author": "Alexander Pirsig <apirsig@web.de>",
+  "author": "Alexander Pirsig <self@pirsig.net>",
   "devDependencies": {
     "mocha": "*",
     "should": "*"

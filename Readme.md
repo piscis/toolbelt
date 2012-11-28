@@ -41,6 +41,7 @@ Run the tests with
 * [fs/copySync](#module-fscopysync)
 * [fs/dirwalkParallel](#module-fsdirwalkparallel)
 * [fs/dirwalkSeriel](#module-fsdirwalkseriel)
+* [fs/parentdir](#module-parentdir)
 
 ###### Radom:
 * [rand/item](#module-randitem)
@@ -320,6 +321,26 @@ Walks a directory recusive in seriel (one-by-one) and lists all files in it.
         if(err) throw new Error('Error');
         console.log(data); // Array with all files in subdirectory
     });
+
+--------------------------------------------------------------
+
+### Module: fs/parentdir
+
+Returns the parent directory for a given path.
+
+    parentdir(path);
+
+* **path** Path from which to resolve from
+
+#### Examples:
+
+    var parentdir = require('toolbelt').pick('fs/parentdir');
+
+    parentdir('C:\A\B\C'); // Returns: C:\A\B
+    parentdir('C:\A\B\C.html'); // Returns: C:\A\B
+    parentdir('.'); // Returns: Parent from current working directory
+    parentdir('..'); // Returns: Parents Parent from current working directory etc. ...
+    parentdir('..','/A/B/C'; // Returns: '/A/B' 
 
 --------------------------------------------------------------
 

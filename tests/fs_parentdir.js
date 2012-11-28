@@ -33,18 +33,18 @@ describe('fs/parentdir', function(){
 
     it('should resolve absolute path from a directory on windows', function(){
 
-        var result = pd('c:\\foo\\bar\\baz');
+        var result = pd('c:'+sep+'foo'+sep+'bar'+sep+'baz');
 
         result.should.be.a('string');
-        result.should.be.eql('c:\\foo\\bar');
+        result.should.be.eql('c:'+sep+'foo'+sep+'bar');
     });
 
     it('should resolve absolute path from a file on windows', function(){
 
-        var result = pd('c:\\foo\\bar\\baz.html');
+        var result = pd('c:'+sep+'foo'+sep+'bar'+sep+'baz.html');
 
         result.should.be.a('string');
-        result.should.be.eql('c:\\foo\\bar');
+        result.should.be.eql('c:'+sep+'foo'+sep+'bar');
     });
 
     it('should resolve from the current working directory', function(){
